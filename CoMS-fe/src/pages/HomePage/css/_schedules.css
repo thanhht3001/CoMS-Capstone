@@ -1,0 +1,222 @@
+.schedules {
+    margin-top: 0.75rem;
+    grid-column: span 12 / span 12;
+
+    >div:first-child {
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+
+        >h2 {
+            margin-right: 1.25rem;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        >a {
+            margin-left: auto;
+            color: rgb(30 64 175 / 1);
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            >.icon {
+                margin-right: 0.25rem;
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+
+    >div:last-child {
+        margin-top: 1.25rem
+            /* 20px */
+        ;
+
+        >div {
+            box-shadow: 0px 3px 20px #0000000b;
+            position: relative;
+            border-radius: 0.375rem;
+            border-color: transparent;
+            background-color: rgb(255 255 255 / 1);
+
+            >div:first-child {
+                padding: 1.25rem
+                    /* 20px */
+                ;
+
+                >div:first-child {
+                    display: flex;
+
+                    >.icon {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        color: rgb(100 116 139 / 1);
+                    }
+
+                    >div {
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        font-weight: 500;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                >div:last-child {
+                    display: grid;
+                    margin-top: 1.25rem;
+                    grid-template-columns: repeat(7, minmax(0, 1fr));
+                    gap: 1rem;
+                    text-align: center;
+
+                    >div {
+                        position: relative;
+                        padding-top: 0.125rem;
+                        padding-bottom: 0.125rem;
+                        border-radius: 0.25rem;
+                    }
+
+                    >div:first-child,
+                    >div:nth-child(2),
+                    >div:nth-child(3),
+                    >div:nth-child(4),
+                    >div:nth-child(5),
+                    >div:nth-child(6),
+                    >div:nth-child(7) {
+                        font-weight: 500;
+                    }
+
+                    >div:nth-child(8),
+                    >div:nth-child(9),
+                    >div:nth-child(10) {
+                        color: rgb(100 116 139 / 1);
+                    }
+
+                    >div:nth-child(16) {
+                        background-color: rgb(230, 245, 208);
+                    }
+
+                    >div:nth-child(18) {
+                        color: rgb(255 255 255 / 1);
+                        background-color: rgb(30 64 175 / 1);
+                    }
+
+                    >div:nth-child(33) {
+                        background-color: rgb(249 115 22 / 0.2);
+                    }
+
+                    >div:nth-child(37) {
+                        background-color: rgb(30 64 175 / 0.1);
+                    }
+
+                    >div:nth-child(40),
+                    >div:nth-child(41),
+                    >div:nth-child(42),
+                    >div:nth-child(43),
+                    >div:nth-child(44),
+                    >div:nth-child(45),
+                    >div:nth-child(46),
+                    >div:nth-child(47),
+                    >div:nth-child(48),
+                    >div:nth-child(49) {
+                        color: rgb(100 116 139 / 1);
+                    }
+                }
+            }
+
+            >div:last-child {
+                border-top: 1px solid rgb(226 232 240 / 0.6);
+                padding: 1.25rem
+                    /* 20px */
+                ;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+
+                    >div {
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        margin-right: 0.75rem;
+                        border-radius: 9999px;
+                    }
+
+                    &:first-child {
+                        >div {
+                            background-color: rgb(249 115 22 / 1);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        >div {
+                            background-color: rgb(30 64 175 / 1);
+                        }
+                    }
+
+                    &:last-child {
+                        >div {
+                            background-color: rgb(250 204 21 / 1);
+                        }
+                    }
+
+                    >span:first-child {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    >span:last-child{
+                        font-weight: 500; 
+                    }
+                }
+
+                >div:not(div:first-child) {
+                    margin-top: 1rem
+                        /* 16px */
+                    ;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .schedules {
+        grid-column: span 6 / span 6;
+    }
+}
+
+@media (min-width: 1280px) {
+    .schedules {
+        grid-column: span 4 / span 4;
+        grid-column-start: 1;
+        grid-row-start: 2;
+
+        >div:last-child {
+            >div {
+                >div:last-child { 
+                    >div {
+                        >span:last-child{
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1536px) {
+    .schedules {
+        grid-column: span 12 / span 12;
+        grid-column-start: auto;
+        grid-row-start: auto;
+    }
+}

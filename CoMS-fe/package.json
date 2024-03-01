@@ -1,0 +1,74 @@
+{
+  "name": "comsweb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^40.0.0",
+    "@ckeditor/ckeditor5-build-inline": "^40.0.0",
+    "@coreui/react-pro": "^4.14.1",
+    "@microsoft/signalr": "^8.0.0",
+    "@pdftron/webviewer": "^10.5.1",
+    "@syncfusion/ej2-base": "^24.1.41",
+    "@syncfusion/ej2-pdf-export": "^24.1.41",
+    "@syncfusion/ej2-react-documenteditor": "^24.1.41",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.2",
+    "date-fns": "^2.30.0",
+    "firebase": "^10.6.0",
+    "flowbite-react": "^0.7.2",
+    "jquery": "^3.7.1",
+    "jwt-decode": "^4.0.0",
+    "primereact": "^10.0.7",
+    "quill": "^1.3.7",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-color": "^2.19.3",
+    "react-date-range": "^1.4.0",
+    "react-datepicker": "^4.25.0",
+    "react-dnd": "^16.0.1",
+    "react-doc-viewer": "^0.1.5",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-icons": "^4.11.0",
+    "react-jquery-plugin": "^1.1.7",
+    "react-pdf": "^7.5.1",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "rsuite": "^5.45.0",
+    "sweetalert2": "^11.9.0",
+    "tiny-slider-react": "^0.5.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "set HTTP=true&&react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1",
+    "tailwindcss": "^3.3.3"
+  }
+}

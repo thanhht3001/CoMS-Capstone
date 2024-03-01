@@ -1,0 +1,29 @@
+.contract-details {
+    .contract-detail-conten {
+
+        >div {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            .contract-name {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #000;
+            }
+
+            .categoryName {
+                padding-top: 0.125rem;
+                padding-bottom: 0.125rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                margin-left: 0.5rem;
+                border-radius: 0.375rem;
+                font-size: 0.75rem;
+                line-height: 1rem;
+                background-color: grey;
+                color: white;
+            }
+        }
+    }
+}

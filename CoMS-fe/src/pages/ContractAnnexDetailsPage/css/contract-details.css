@@ -1,0 +1,18 @@
+.contract-details-annex {
+    .contract-detail-conten {
+
+        >div {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            .contract-name {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #000;
+            }
+
+            
+        }
+    }
+}

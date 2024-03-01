@@ -1,0 +1,108 @@
+.weekly-best-part {
+    margin-top: 1.5rem;
+    grid-column: span 12 / span 12;
+
+    >div:first-child {
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+
+        >h2 {
+            margin-right: 1.25rem;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    >div:last-child {
+        margin-top: 1.25rem;
+
+        >div {
+            >div {
+                display: flex;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                margin-bottom: 0.75rem;
+                align-items: center;
+                box-shadow: 0px 3px 20px #0000000b;
+                position: relative;
+                border-radius: 0.375rem;
+                border-color: transparent;
+                background-color: rgb(255 255 255 / 1);
+
+                >div:first-child {
+                    flex: none;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    overflow: hidden;
+                    border-radius: 0.375rem;
+                }
+
+                >div:nth-child(2) {
+                    margin-left: 1rem;
+                    margin-right: auto;
+
+                    >div:first-child {
+                        font-weight: 500;
+                    }
+
+                    >div:last-child {
+                        color: rgb(100 116 139 / 1);
+                        margin-top: 0.125rem;
+                        font-size: 0.75rem;
+                        line-height: 1rem;
+                    }
+                }
+
+                >div:last-child {
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    border-radius: 9999px;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    background-color: rgb(132, 204, 22);
+                    color: rgb(255 255 255 / 1);
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                &.zoom-in {
+                    transition: transform .4s;
+                }
+
+                &.zoom-in:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
+            }
+        }
+
+        >a {
+            display: block;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 0.375rem;
+            border-width: 1px;
+            border-style: dotted;
+            width: 100%;
+            text-align: center;
+            border-color: rgb(148 163 184 / 1);
+            color: rgb(100 116 139 / 1);
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .weekly-best-part {
+        grid-column: span 4 / span 4;
+    }
+}
